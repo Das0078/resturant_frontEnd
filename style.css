@@ -1,7 +1,23 @@
 
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+  }
+  .parent{
+    background-image: url("./images/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+  
+    height: fit-content;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
 .collapse{
     position: relative;
-    left: 250px;
+    left: 330px;
 }
 
 nav{
@@ -11,17 +27,27 @@ nav{
     transition: 0.3s;
 }
 
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
 
 .nav-item{
-    margin-left:50px;
+    margin-left:58px;
 }
 .nav-item .nav-link{
+    color: rgb(226, 226, 226);
+ font-size: 20px;
     transition: 0.3s;
 }
 .nav-item .nav-link:hover{
-color: azure;
-font-size: 19px;
+color: #001219;
+ border-radius: 20px;
+padding: 5px 10px;
+background-color: azure; 
+
 }
 .row{
     background-color: black;
@@ -62,19 +88,27 @@ font-size: 19px;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: black;
     color: azure;
     border-bottom: 1px solid grey;
+    background-color: rgba(0, 0, 0, 1);
+
     
 }
 .para{
     /* border: 1px solid wheat; */
     max-width: 500px;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
+
 .map{
     margin-top: 10px;
     margin-bottom: 20px;
+    transition: 0.3s;
+
+}
+.map:hover{
+   filter: grayscale(40%);
 }
 
 .u1{
@@ -85,7 +119,7 @@ font-size: 19px;
     text-align: center;
 }
 .role{
-    color: gray;
+    color: rgb(208, 203, 203);
     text-align: center;
 }
 
@@ -96,10 +130,11 @@ font-size: 19px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.cards .card{
+.card{
     transition: 0.7s;
 }
-.cards .card:hover{
+
+.card:hover{
     width: 450px;
 }
 .spec,.spec2{
@@ -152,7 +187,14 @@ footer a{
     .collapse{
         left: 0px;
     }
+    .navbar{
+        background-color: #001219;
+    }
+    .para{
+        margin-left: 10px;
+    }
 }
+
 @media(max-width: 899px){
 .con{
     height: 600px;
@@ -160,6 +202,7 @@ footer a{
 .spec,.spec2{
     height: 350px;
 }
+
 
   /* .c2{
     display: block;
